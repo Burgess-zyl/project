@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>视差滚动</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .c {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+        }
+        .c.one {
+            width: 50%;
+            height: 50%;
+            font-size: 70px;
+            color: #fff;
+        }
+        .t-l{
+            text-align: left;
+        }
+        .t-r{
+            text-align: right;
+        }
+        .b-img {
+            height: 100vh;
+            background-size:cover;
+            background-position: 50% 50%;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        .img1 {
+            background-image: url('./img/banner1.jpg');
+        }
+        .img2 {
+            background-image: url('./img/banner2.jpg');
+        }
+        .img3 {
+            background-image: url('./img/banner3.jpg');
+        }
+    </style>
+</head>
+<body>
+    <section class="b-img img1">
+        <div class="c one">
+            <h1 class="t-l">创新科技</h1>
+            <h1 class="t-r">匠心服务</h1>
+        </div>
+    </section>
+    <section class="b-img">
+
+    </section>
+</body>
+</html>
